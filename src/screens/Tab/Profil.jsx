@@ -5,7 +5,7 @@ import Foto from '../../assets/image/profil1.jpg';
 export default function Profil() {
   return (
     <View style={styles.container}>
-      <Image style={styles.backgroundImage} source={{uri: 'https://example.com/background.jpg'}} />
+      <Image style={styles.backgroundImage} source={require('../../assets/image/baground.jpg')} />
       <View style={styles.overlay} />
       <View style={styles.profilContainer}>
         <View style={styles.imgContainer}>

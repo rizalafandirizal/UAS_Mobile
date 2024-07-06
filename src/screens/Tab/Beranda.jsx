@@ -3,9 +3,9 @@ import { View, Text, StyleSheet, Image, Button, ScrollView } from 'react-native'
 
 // Mengimpor gambar lokal
 import BannerImage from '../../assets/image/laundry.jpg';
-import ServiceImage1 from '../../assets/image/blue.jpg';
-import ServiceImage2 from '../../assets/image/blue.jpg';
-import ServiceImage3 from '../../assets/image/blue.jpg';
+import ServiceImage1 from '../../assets/image/kering.jpg';
+import ServiceImage2 from '../../assets/image/setrika.png';
+import ServiceImage3 from '../../assets/image/sepatu.png';
 
 const HomeScreen = ({ navigation }) => {
   return (
@@ -56,7 +56,7 @@ const HomeScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#00FFFF',
   },
   header: {
     padding: 20,
@@ -82,20 +82,25 @@ const styles = StyleSheet.create({
   servicesHeader: {
     fontSize: 20,
     marginBottom: 10,
+    color: 'black',
+    textAlign: 'center',
   },
   serviceItem: {
     flexDirection: 'row',
     alignItems: 'center',
     marginBottom: 20,
+    marginTop: 10,
+    margin: 30,
   },
   serviceImage: {
     width: 90,
     height: 50,
-    marginRight: 80,
+    marginRight: 60,
+    borderRadius: 90,
   },
   serviceText: {
     fontSize: 28,
-    color: '#00FFFF',
+    color: 'black',
   },
   footer: {
     padding: 20,
