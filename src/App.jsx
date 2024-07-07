@@ -42,7 +42,7 @@ const Tabs = () => {
           position: 'absolute',
           left: 10,
           right: 10,
-          bottom: 10,
+          bottom: 5,
           height: 70,
           borderRadius: 20,
           backgroundColor: 'transparent',

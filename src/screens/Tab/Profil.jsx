@@ -1,11 +1,12 @@
 import React from 'react';
 import { Image, StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome'; // Mengimpor ikon dari FontAwesome
 import Foto from '../../assets/image/profil1.jpg';
 
 export default function Profil() {
   return (
     <View style={styles.container}>
-      <Image style={styles.backgroundImage} source={require('../../assets/image/baground.jpg')} />
+      <Image style={styles.backgroundImage} source={require('../../assets/image/laundry1.jpg')} />
       <View style={styles.overlay} />
       <View style={styles.profilContainer}>
         <View style={styles.imgContainer}>
@@ -21,6 +22,15 @@ export default function Profil() {
           <Text style={styles.info}>Email: isi sendiri</Text>
           <Text style={styles.info}>Phone: +62*********</Text>
           <Text style={styles.info}>Address: Hati yang mati</Text>
+        </View>
+        <View style={styles.socialMediaContainer}>
+          <Text style={styles.socialMediaTitle}>Media Sosial</Text>
+          <View style={styles.socialMediaIcons}>
+            <Icon name="facebook" size={30} color="#3b5998" style={styles.icon} />
+            <Icon name="twitter" size={30} color="#00acee" style={styles.icon} />
+            <Icon name="instagram" size={30} color="#C13584" style={styles.icon} />
+            <Icon name="linkedin" size={30} color="#0e76a8" style={styles.icon} />
+          </View>
         </View>
       </View>
     </View>
@@ -94,6 +104,7 @@ const styles = StyleSheet.create({
     padding: 10,
     backgroundColor: 'white',
     borderRadius: 10,
+    marginBottom: 20,
   },
   infoTitle: {
     fontSize: 18,
@@ -107,5 +118,27 @@ const styles = StyleSheet.create({
     color: 'black',
     marginBottom: 5,
     textAlign: 'center',
+  },
+  socialMediaContainer: {
+    width: '80%',
+    padding: 10,
+    backgroundColor: 'white',
+    borderRadius: 10,
+    alignItems: 'center',
+  },
+  socialMediaTitle: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: 'black',
+    marginBottom: 10,
+    textAlign: 'center',
+  },
+  socialMediaIcons: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    width: '60%',
+  },
+  icon: {
+    marginHorizontal: 10,
   },
 });

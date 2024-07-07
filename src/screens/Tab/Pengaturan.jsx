@@ -122,7 +122,14 @@ const styles = StyleSheet.create({
     color: '#aaa',
   },
   button: {
-    marginTop: 10,
+    padding: 10,
+    margin: 30,
+    backgroundColor: 'black',
+  },
+  buttonText: {
+    textAlign: 'center',
+    color: 'white',
+    fontSize: 20,
   },
 });
 
